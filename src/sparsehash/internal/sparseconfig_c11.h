@@ -37,7 +37,9 @@
 /* #undef HAVE___UINT16 */
 
 /* The system-provided hash function including the namespace. */
-#define SPARSEHASH_HASH HASH_NAMESPACE::hash
+#ifndef SPARSEHASH_HASH 
+    #define SPARSEHASH_HASH std::hash
+#endif
 
 /* Stops putting the code inside the Google namespace */
 #define _END_GOOGLE_NAMESPACE_ }
