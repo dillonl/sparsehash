@@ -54,8 +54,8 @@
 //
 // See PERFORMANCE for the output of one example run.
 
-#include <sparsehash/internal/sparseconfig.h>
-#include <config.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include <config_c11.h>
 #ifdef HAVE_INTTYPES_H
 # include <inttypes.h>
 #endif         // for uintptr_t

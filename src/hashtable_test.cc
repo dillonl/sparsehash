@@ -44,8 +44,8 @@
 // to call every public method on the class: not just to make sure
 // they work, but to make sure they even compile.
 
-#include <sparsehash/internal/sparseconfig.h>
-#include <config.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include <config_c11.h>
 #include <math.h>
 #include <stddef.h>   // for size_t
 #include <stdlib.h>

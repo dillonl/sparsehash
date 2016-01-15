@@ -89,7 +89,7 @@
 #ifndef _DENSEHASHTABLE_H_
 #define _DENSEHASHTABLE_H_
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <assert.h>
 #include <stdio.h>              // for FILE, fwrite, fread
 #include <algorithm>            // For swap(), eg

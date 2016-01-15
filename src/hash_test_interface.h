@@ -45,7 +45,7 @@
 #ifndef UTIL_GTL_HASH_TEST_INTERFACE_H_
 #define UTIL_GTL_HASH_TEST_INTERFACE_H_
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <functional>          // for equal_to<>
 #include <sparsehash/internal/sparsehashtable.h>
 #include <sparsehash/sparse_hash_map>

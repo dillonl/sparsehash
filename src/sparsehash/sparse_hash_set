@@ -88,7 +88,7 @@
 #ifndef _SPARSE_HASH_SET_H_
 #define _SPARSE_HASH_SET_H_
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <algorithm>                       // needed by stl_alloc
 #include <functional>                      // for equal_to<>
 #include <memory>                          // for alloc (which we don't use)

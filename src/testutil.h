@@ -37,8 +37,8 @@
 #ifndef SPARSEHASH_TEST_UTIL_H_
 #define SPARSEHASH_TEST_UTIL_H_
 
-#include <sparsehash/internal/sparseconfig.h>
-#include "config.h"
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include "config_c11.h"
 #include <stdio.h>
 #include <stdlib.h>    // for exit
 #include <stdexcept>   // for length_error

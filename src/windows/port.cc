@@ -31,12 +31,12 @@
  * Author: Craig Silverstein
  */
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #ifndef WIN32
 # error You should only be including windows/port.cc in a windows environment!
 #endif
 
-#include "config.h"
+#include "config_c11.h"
 #include <stdarg.h>    // for va_list, va_start, va_end
 #include "port.h"
 

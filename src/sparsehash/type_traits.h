@@ -57,7 +57,7 @@
 #ifndef BASE_TYPE_TRAITS_H_
 #define BASE_TYPE_TRAITS_H_
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <utility>                  // For pair
 
 #include <sparsehash/template_util.h>     // For true_type and false_type

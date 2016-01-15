@@ -41,8 +41,8 @@
 #ifndef SPARSEHASH_WINDOWS_PORT_H_
 #define SPARSEHASH_WINDOWS_PORT_H_
 
-#include <sparsehash/internal/sparseconfig.h>
-#include "config.h"
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include "config_c11.h"
 
 #ifdef WIN32
 

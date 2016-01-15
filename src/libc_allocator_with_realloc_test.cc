@@ -29,8 +29,8 @@
 
 // ---
 
-#include <sparsehash/internal/sparseconfig.h>
-#include <config.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include <config_c11.h>
 #include <sparsehash/internal/libc_allocator_with_realloc.h>
 #include <stdlib.h>
 #include <string>

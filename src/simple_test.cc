@@ -34,8 +34,8 @@
 // #include <config.h>; it's meant to emulate what a 'regular
 // install' of sparsehash would be able to see.
 
-#include <sparsehash/internal/sparseconfig.h>
-#include <config.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include <config_c11.h>
 #include <stdio.h>
 #include <sparsehash/sparse_hash_set>
 #include <sparsehash/sparse_hash_map>

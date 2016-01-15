@@ -1,4 +1,4 @@
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>

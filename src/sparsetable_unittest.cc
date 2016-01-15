@@ -33,8 +33,8 @@
 // function in every class in this file -- not just to see if it
 // works, but even if it compiles.
 
-#include <sparsehash/internal/sparseconfig.h>
-#include <config.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
+#include <config_c11.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>      // for size_t

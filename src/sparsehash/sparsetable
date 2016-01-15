@@ -224,7 +224,7 @@
 #ifndef UTIL_GTL_SPARSETABLE_H_
 #define UTIL_GTL_SPARSETABLE_H_
 
-#include <sparsehash/internal/sparseconfig.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <stdlib.h>             // for malloc/free
 #include <stdio.h>              // to read/write tables
 #include <string.h>             // for memcpy
