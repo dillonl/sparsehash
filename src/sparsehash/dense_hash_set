@@ -100,7 +100,7 @@
 #ifndef _DENSE_HASH_SET_H_
 #define _DENSE_HASH_SET_H_
 
-#include <sparsehash/internal/sparseconfig_set.h>
+#include <sparsehash/internal/sparseconfig_c11.h>
 #include <algorithm>                        // needed by stl_alloc
 #include <functional>                       // for equal_to<>, select1st<>, etc
 #include <memory>                           // for alloc
