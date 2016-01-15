@@ -46,6 +46,8 @@ fi
 AC_SUBST(tcmalloc_flags)
 AC_SUBST(tcmalloc_libs)
 
+CFLAGS+=" -std=c11"
+
 # Figure out where hash_map lives and also hash_fun.h (or stl_hash_fun.h).
 # This also tells us what namespace hash code lives in.
 AC_CXX_STL_HASH

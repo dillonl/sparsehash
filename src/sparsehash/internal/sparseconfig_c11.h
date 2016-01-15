@@ -39,7 +39,7 @@
 
 /* The system-provided hash function including the namespace. */
 #ifndef SPARSEHASH_HASH 
-    #define SPARSEHASH_HASH std::hash
+    #define SPARSEHASH_HASH HASH_NAMESPACE::hash
 #endif
 
 /* Stops putting the code inside the Google namespace */
