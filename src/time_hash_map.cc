@@ -225,7 +225,7 @@ template<int Size, int Hashsize> class HashObject {
     for (size_t i = 0; i < Hashsize - sizeof(i_); ++i) {
       hashval += buffer_[i];
     }
-    return SPARSEHASH_HASH<int>()(hashval);
+    return std::hash<int>()(hashval);
   }
 
   bool operator==(const class_type& that) const { return this->i_ == that.i_; }
@@ -253,7 +253,7 @@ template<> class HashObject<sizeof(int), sizeof(int)> {
 
   size_t Hash() const {
     g_num_hashes++;
-    return SPARSEHASH_HASH<int>()(i_);
+    return std::hash<int>()(i_);
   }
 
   bool operator==(const class_type& that) const { return this->i_ == that.i_; }

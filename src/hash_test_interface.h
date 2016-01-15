@@ -388,7 +388,7 @@ class BaseHashtableInterface {
 // ---------------------------------------------------------------------
 
 template <class Key, class T,
-          class HashFcn = SPARSEHASH_HASH<Key>,
+          class HashFcn = std::hash<Key>,
           class EqualKey = std::equal_to<Key>,
           class Alloc = libc_allocator_with_realloc<std::pair<const Key, T> > >
 class HashtableInterface_SparseHashMap
@@ -470,7 +470,7 @@ void swap(HashtableInterface_SparseHashMap<K,T,H,E,A>& a,
 // ---------------------------------------------------------------------
 
 template <class Value,
-          class HashFcn = SPARSEHASH_HASH<Value>,
+          class HashFcn = std::hash<Value>,
           class EqualKey = std::equal_to<Value>,
           class Alloc = libc_allocator_with_realloc<Value> >
 class HashtableInterface_SparseHashSet
@@ -705,7 +705,7 @@ void swap(HashtableInterface_SparseHashtable<V,K,HF,EK,SK,Eq,A>& a,
 // value saying what the empty key is.
 
 template <class Key, class T, const Key& EMPTY_KEY,
-          class HashFcn = SPARSEHASH_HASH<Key>,
+          class HashFcn = std::hash<Key>,
           class EqualKey = std::equal_to<Key>,
           class Alloc = libc_allocator_with_realloc<std::pair<const Key, T> > >
 class HashtableInterface_DenseHashMap
@@ -799,7 +799,7 @@ void swap(HashtableInterface_DenseHashMap<K,T,Empty,H,E,A>& a,
 // value saying what the empty key is.
 
 template <class Value, const Value& EMPTY_KEY,
-          class HashFcn = SPARSEHASH_HASH<Value>,
+          class HashFcn = std::hash<Value>,
           class EqualKey = std::equal_to<Value>,
           class Alloc = libc_allocator_with_realloc<Value> >
 class HashtableInterface_DenseHashSet
