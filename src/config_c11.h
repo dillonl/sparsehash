@@ -111,7 +111,7 @@
 /* #undef PTHREAD_CREATE_JOINABLE */
 
 /* The system-provided hash function including the namespace. */
-#define SPARSEHASH_HASH HASH_NAMESPACE::hash
+#define SPARSEHASH_HASH std::hash
 
 /* The system-provided hash function, in namespace HASH_NAMESPACE. */
 #define SPARSEHASH_HASH_NO_NAMESPACE hash
